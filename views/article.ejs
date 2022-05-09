@@ -1,0 +1,97 @@
+<html>
+  <head> 
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/article.css"/>
+  </head>
+
+  <body>
+    <div class="big-container">
+      <!-- Header -->
+      <div class="header">
+        <h1> LOW←TECH MAGAZINE </h1>
+        <div class="subtitle"> This is a solar-powered website, which means it sometimes goes offline </div>
+        <div class="menu">
+          About | 
+          <span class="blue">Low-tech solutions</span> |
+          <span class="red">High-tech problems</span> |
+          ...
+        </div>
+      </div>
+      <!-- End of Header -->
+
+      <!-- Article content -->
+      <div class="content">
+        <!-- Article title -->
+        <div class="article-title">
+            <h1><%= message.articleTitle %></h1>
+        </div>
+        
+        <!-- Article summary -->
+        <div class="article-summary">
+            <h2><%= message.articleSummary %></h2>
+        </div>
+
+        <!-- Article image -->
+        <% if (message.image) { %>
+        <div class="article-image">
+              <img src="<%= message.image %>" />
+        </div>
+        <% } %>
+
+        <!-- Article text -->
+        <div class="article-text">
+            <div class="content">
+              <%= message.articleBody %>
+            </div>
+
+            <div class="navigation">
+                <a href="/">< Go back</a>
+            </div>
+    
+        </div>
+
+      </div>
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <h2 class="footer-title">LOW←TECH MAGAZINE</h2>
+
+        <div class="footer-menu">
+          <div class="stats">
+            <em>Server Stats</em> <br/>
+            Location: Barcelona <br/>
+            <span class="extra-credit">Server Time: 15:50 CET</span><br/>
+          </div>
+
+          <div class="forecast">
+            <em>Forecast</em> <br/>
+            <span class="extra-credit">today</span> <br/>
+            <span class="extra-credit">tomorrow</span> <br/>
+            <span class="extra-credit">day after tomorrow</span> <br/>
+          </div>
+
+          <div class="info">
+            <em>Info</em> <br/>
+            About the site <br/>
+            Power <br/>
+            Colophon <br/>
+            Donate <br/>
+            Privacy Policy <br/>
+          </div>
+
+          <div class="contact">
+            <em>Contact</em> <br/>
+            ©js12156 <br/>
+          </div>
+        </div>
+
+        <div class="page-size">
+          <small class="extra-credit">Page size: 636KB</small>
+        </div>
+      </div>
+    <!-- End of Footer -->
+    </div>
+  </body>
+
+</html>

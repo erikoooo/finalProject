@@ -1,0 +1,60 @@
+.submit-title {
+    margin: 20px 0;
+}
+
+.image-choose {
+    margin-top: 25px;
+    padding: 20px 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.article-textarea {
+    width: 100%;
+    height: 500px;
+    font-family: sans-serif;
+    border: 0;
+    padding: 10px;
+}
+
+.article-textarea.summary {
+    height: 65px;
+    margin-top: 15px;
+}
+
+textarea:focus {
+    outline: 1px dashed black;
+}
+
+.featured-container {
+    margin-bottom: 25px;
+    padding: 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.permalink-container {
+    padding: 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+.submit-container {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 18pt;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+input[type="text"] {
+    width: 500px;
+    padding: 5px;
+}

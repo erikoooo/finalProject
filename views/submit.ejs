@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/submit.css" />
+</head>
+
+<body>
+  <div class="big-container">
+    <!-- Header -->
+    <div class="header">
+      <h1> LOW←TECH MAGAZINE </h1>
+      <div class="subtitle"> This is a solar-powered website, which means it sometimes goes offline </div>
+      <div class="menu">
+        About |
+        <span class="blue">Low-tech solutions</span> |
+        <span class="red">High-tech problems</span> |
+        ...
+      </div>
+    </div>
+
+    <!-- Submission form -->
+    <div class="content">
+      <div class="submit-title">
+        <h2> Publish a new article </h2>
+      </div>
+
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <div>
+          <textarea class="article-textarea title" name="articleTitle"
+            placeholder="Write your title here..."></textarea>
+        </div>
+
+        <div>
+          <textarea class="article-textarea" name="articleBody" placeholder="Write your article here..."></textarea>
+        </div>
+
+        <div>
+          <textarea class="article-textarea summary" name="articleSummary"
+            placeholder="Write your one-sentence summary here..."></textarea>
+        </div>
+
+        <div class="controls-container">
+          <div class="image-choose">
+            Choose an image for your article:       
+            <input type="file" name="theimage" id="theimage" onchange="fileSelected();" accept="image/*" capture="camera" />
+
+          </div>
+
+          <div class="permalink-container">
+            <label for="permalinkInput"> Article Permalink (no spaces): </label>
+            <input type="text" id="permalinkInput" name="permalink" placeholder="/facebook-rebrands-as-meta" />
+          </div>
+
+          <div class="featured-container">
+            <input type="checkbox" id="featuredCheckbox" name="featured" />
+            <label for="featuredCheckbox"> This article is featured (checking this will replace the currently featured
+              article) </label>
+          </div>
+
+          <div class="submit-container">
+            <input type="submit" name="submitbutton" value="Publish" />
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2 class="footer-title">LOW←TECH MAGAZINE</h2>
+
+      <div class="footer-menu">
+        <div class="stats">
+          <em>Server Stats</em> <br />
+          Location: Barcelona <br />
+          <span class="extra-credit">Server Time: 15:50 CET</span><br />
+        </div>
+
+        <div class="forecast">
+          <em>Forecast</em> <br />
+          <span class="extra-credit">today</span> <br />
+          <span class="extra-credit">tomorrow</span> <br />
+          <span class="extra-credit">day after tomorrow</span> <br />
+        </div>
+
+        <div class="info">
+          <em>Info</em> <br />
+          About the site <br />
+          Power <br />
+          Colophon <br />
+          Donate <br />
+          Privacy Policy <br />
+        </div>
+
+        <div class="contact">
+          <em>Contact</em> <br />
+          ©js12156 <br />
+        </div>
+      </div>
+
+      <div class="page-size">
+        <small class="extra-credit">Page size: 636KB</small>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

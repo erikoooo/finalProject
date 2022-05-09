@@ -1,0 +1,33 @@
+.article-title {
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.article-summary {
+    width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.article-image {
+    margin-bottom: 25px;
+}
+
+.article-image > img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.article-text {    
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.navigation {
+    margin-top: 20px;
+    text-decoration: underline;
+}
